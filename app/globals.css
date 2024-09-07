@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+}
+
+iframe {
+  display: block;
+  border: none;
+}
+/* Añadir estos estilos a tu archivo CSS global (por ejemplo, globals.css) */
+
+.scrollable-list {
+  scrollbar-width: thin;
+  /* Para Firefox */
+  scrollbar-color: #cbd5e0 transparent;
+  /* Color de la barra de desplazamiento en Firefox */
+}
+
+/* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
+.scrollable-list::-webkit-scrollbar {
+  width: 8px;
+  /* Grosor de la barra de desplazamiento */
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  background: transparent;
+  /* Fondo del contenedor de la barra de desplazamiento */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: #cbd5e0;
+  /* Color de la barra de desplazamiento */
+  border-radius: 8px;
+  /* Radio de las esquinas */
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background-color: #a0aec0;
+  /* Color de la barra de desplazamiento al pasar el ratón */
+}
